@@ -21,24 +21,36 @@
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="./leaving-soon.html">Leaving Soon</a>
-              <a class="nav-item nav-link" href="#">Recently Added</a>
-              <a class="nav-item nav-link" href="./search-by-country.html">Search by Country</a>
+              <a class="nav-item nav-link" href="./recently-added.html">Recently Added</a>
+              <a class="nav-item nav-link" href="#">Search by Country</a>
               <!-- <a class="nav-item nav-link" href="#">Search (Global, Genre, etc.)</a> -->
             </div>
         </nav>
 
-        <!-- Description -->
+        <!-- Page Description -->
         <div class="col-lg-6 offset-lg-4">
-            <p>Here is a list of all titles recently added to Netflix's U.S. catalog.</p>
+            <p>Select a country from the dropdown menu and search for any title.</p>
         </div>
+
+        <!-- Dropdown Menu -->
+        <!-- Large button groups (default) -->
+        <div class="btn-group">
+            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Country
+            </button>
+            <ul class="dropdown-menu">
+                <li>U.S.</li>
+            </ul>
+        </div>
+        
 
         <!-- FOOTER -->
         <!-- previously with bg-secondary -->
         <footer class="p-5 text-white">
             &copy; 2020 Netflix Helper Inc.
         </footer>
-    </body>
 
-    <!-- JS Functionality -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <!-- JS Functionality -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
 </html>

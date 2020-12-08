@@ -29,12 +29,12 @@
 
         <!-- Page Description -->
         <div class="col-lg-6 offset-lg-4">
-            <p>Select a country from the dropdown menu and search for any title.</p>
+            <p>Search for any title and select a country from the dropdown menu.</p>
         </div>
 
         <!-- Dropdown Menu -->
         <!-- Large button groups (default) -->
-        <div class="btn-group">
+        <!-- <div class="btn-group">
             <button class="btn btn-secondary btn-lg dropdown-toggle offset-lg-8" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Country
             </button>
@@ -43,7 +43,28 @@
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-        </div>
+        </div> -->
+        <form class="row gy-2 gx-3 align-items-center offset-md-4">
+            <!-- Search field -->
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInput">Search</label>
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="Type in a title to search">
+            </div>
+            <!-- Dropdown menu -->
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingSelect">Country</label>
+                <select class="form-select" id="autoSizingSelect">
+                <option selected>Choose a country</option>
+                <option value="U.S.">U.S.</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+            </div>
+            <!-- Submit button -->
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
         
 
         <!-- FOOTER -->
